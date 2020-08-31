@@ -1,0 +1,24 @@
+@import "parts/_utils";
+
+body{
+  font-family: 'PT Sans', sans-serif;
+  /*temp*/
+  background: url('../img/temp.png') center top no-repeat;
+  /**/
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  &:hover{
+    color: $blue;
+  }
+}
+
+
+@import "parts/_grid";
+@import "parts/_icos";
+@import "parts/_header";
+@import "parts/_menu";
+@import "parts/_banner";
+
+

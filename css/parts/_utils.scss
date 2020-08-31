@@ -1,0 +1,24 @@
+/*VARS*/
+$red: #F44436;
+$base: #404142;
+$base-font-size: 16px;
+$borderGrey: #CDCECF;
+$blue: #1782E9;
+
+.red{
+  color: $red;
+}
+
+body{
+  color: $base;
+  font-size: $base-font-size;
+}
+
+/*marks*/
+.ul{
+  padding: 0;
+  margin: 0;
+  li{
+    list-style: none;
+  }
+}

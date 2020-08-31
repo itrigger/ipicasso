@@ -1,0 +1,72 @@
+.header{
+  display: grid;
+  grid-column: 1 / -1;
+  padding-top: 25px;
+  padding-bottom: 28px;
+  &>.in{
+    align-items: center;
+  }
+}
+
+.burger{
+  grid-column: 1 / span 1;
+  margin-left: 12px;
+}
+.burger--btn{
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 36px;
+  position: relative;
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../img/burger.png") 0 0 no-repeat;
+    width: 24px;
+    height: 22px;
+    left: 0;
+    top:50%;
+    margin-top: -11px;
+  }
+}
+.logo-wrapper{
+  grid-column: 6 / span 2;
+  text-align: center;
+}
+  .logo{
+    width: 190px;
+    height: 48px;
+    background: url("../img/logo.png") 0 0 no-repeat;
+    display: inline-block;
+  }
+.sign-block{
+  grid-column: 11 / span 1;
+  text-align: right;
+}
+.header--cart_block{
+  grid-column: 12 / span 1;
+  text-align: right;
+  margin-right: 12px;
+}
+.greetings{
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+.sign-line{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+.cart_block--price{
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
