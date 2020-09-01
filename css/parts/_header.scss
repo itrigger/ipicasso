@@ -26,12 +26,17 @@
     content: "";
     display: block;
     position: absolute;
-    background: url("../img/burger.png") 0 0 no-repeat;
-    width: 24px;
-    height: 22px;
-    left: 0;
-    top:50%;
-    margin-top: -11px;
+    background: url("../img/icon-hamburger-normal.svg") 0 0 no-repeat;
+    width: 32px;
+    height: 32px;
+    left: -4px;
+    top: 50%;
+    margin-top: -15px;
+  }
+  &:hover{
+    &:before{
+      background: url("../img/icon-hamburger-focus.svg") 0 0 no-repeat;
+    }
   }
 }
 .logo-wrapper{
@@ -47,16 +52,25 @@
 .sign-block{
   grid-column: 11 / span 1;
   text-align: right;
+  border-right: 1px solid $borderGrey;
+  padding: 10px 70px 10px 0;
 }
 .header--cart_block{
   grid-column: 12 / span 1;
   text-align: right;
   margin-right: 12px;
+  cursor: pointer;
+  &:hover{
+    .cart_block--price:after{
+      background: url("../img/icon-cart-focus.svg") 0 0 no-repeat;
+    }
+  }
 }
 .greetings{
   font-size: 14px;
   letter-spacing: 0;
   line-height: 14px;
+  margin-bottom: 2px;
 }
 .sign-line{
   font-size: 14px;
@@ -68,5 +82,19 @@
   font-size: 16px;
   letter-spacing: 0;
   line-height: 20px;
+  position: relative;
+  padding-right: 36px;
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url("../img/icon-cart-normal.svg") 0 0 no-repeat;
+    right: -3px;
+    top: 50%;
+    margin-top: -15px;
+  }
+
 }
 

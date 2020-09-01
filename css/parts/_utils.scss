@@ -1,9 +1,13 @@
 /*VARS*/
 $red: #F44436;
 $base: #404142;
+$grey: #8A8B8C;
+$blue: #1782E9;
+$green: #00a246;
+$yellow: #ffc31a;
 $base-font-size: 16px;
 $borderGrey: #CDCECF;
-$blue: #1782E9;
+
 
 .red{
   color: $red;
@@ -22,3 +26,26 @@ body{
     list-style: none;
   }
 }
+
+/*labels*/
+.label{
+  border-radius: 4px;
+  line-height: 0;
+  padding: 1px 5px;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-right: 4px;
+  span{
+    line-height: 0;
+  }
+  &.label--new{
+    background: $green;
+    color: #ffffff;
+  }
+  &.label--soon{
+    background: $yellow;
+    color: $base;
+    font-weight: bold;
+  }
+}
+

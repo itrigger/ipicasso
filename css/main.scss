@@ -4,6 +4,7 @@ body{
   font-family: 'PT Sans', sans-serif;
   /*temp*/
   background: url('../img/temp.png') center top no-repeat;
+  padding-bottom: 500px;
   /**/
 }
 a{
@@ -14,11 +15,22 @@ a{
   }
 }
 
+/*Хаотичная разметка по дизайну*/
+#banners{
+  margin-bottom: 61px;
+}
+.main-page-collections{
+  margin-top: 139px;
+}
+
+
 
 @import "parts/_grid";
 @import "parts/_icos";
 @import "parts/_header";
 @import "parts/_menu";
 @import "parts/_banner";
+@import "parts/_mod_carousel";
+@import "parts/_uniqs";
 
 
