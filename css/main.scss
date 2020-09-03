@@ -10,8 +10,10 @@ body{
 a{
   text-decoration: none;
   color: inherit;
+  transition: 0.3s all;
   &:hover{
     color: $blue;
+    transition: 0.3s all;
   }
 }
 
@@ -20,9 +22,11 @@ a{
   margin-bottom: 61px;
 }
 .main-page-collections{
-  margin-top: 139px;
+  margin-top: 140px;
 }
-
+.module-mp-cat-actions{
+  margin-top: 173px;
+}
 
 
 @import "parts/_grid";

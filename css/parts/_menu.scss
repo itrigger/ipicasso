@@ -5,6 +5,7 @@
   border-bottom: 1px solid $borderGrey;
 }
 .category_menu{
+  grid-column: 1 /span 12;
   .ul{
     display: flex;
     justify-content: space-between;
