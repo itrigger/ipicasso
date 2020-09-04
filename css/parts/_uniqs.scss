@@ -216,4 +216,14 @@
 
 .main-page_gallery{
   margin-top: 146px;
+  .mosaic-wrapper{
+    margin-top: 40px;
+    grid-column: 1 / span 12;
+  }
+  .btn-wrapper{
+    margin-top: 23px;
+    grid-column: 1 / 13;
+    text-align: center;
+  }
 }
+
