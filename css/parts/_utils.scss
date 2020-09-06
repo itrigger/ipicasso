@@ -89,6 +89,96 @@ body{
   }
 }
 
+.ico-tel{
+  position: relative;
+  padding-left: 31px;
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon-tel.jpg") 0 0 no-repeat;
+    left: 0;
+    top: 0;
+  }
+}
+
+.ico-mail{
+  position: relative;
+  padding-left: 31px;
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon-mail.jpg") 0 0 no-repeat;
+    left: 0;
+    top: 2px;
+  }
+}
+
+.ico-clock{
+  position: relative;
+  padding-left: 31px;
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon-clock.jpg") 0 0 no-repeat;
+    left: 0;
+    top: 6px;
+  }
+}
+
+.ico-ig{
+  width: 42px;
+  height: 48px;
+  display: inline-block;
+  background: url("../img/ico-ig.jpg") 0 0 no-repeat;
+}
+.ico-fb{
+  width: 45px;
+  height: 48px;
+  display: inline-block;
+  background: url("../img/ico-fb.jpg") 0 0 no-repeat;
+}
+.ico-yt{
+  width: 35px;
+  height: 48px;
+  display: inline-block;
+  background: url("../img/ico-yt.jpg") 0 0 no-repeat;
+}
+
+.arrow-white{
+  position: relative;
+  padding-right: 35px;
+  display: inline-block;
+  transition: 0.3s all;
+  &:after{
+    transition: 0.3s all;
+    content: "";
+    background: url("../img/icon-arrow-go-normal-white.svg") 0 0 no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 9px;
+  }
+  &:hover{
+    &:after{
+      transition: 0.3s all;
+      background: url("../img/icon-arrow-go-focus.svg") 0 0 no-repeat;
+    }
+  }
+}
+
+
+
 
 /*!
  * jQuery Accordion 0.0.1

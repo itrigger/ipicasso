@@ -3,8 +3,7 @@
 body{
   font-family: 'PT Sans', sans-serif;
   /*temp*/
-  background: url('../img/temp.png') center top no-repeat;
-  padding-bottom: 500px;
+  //background: url('../img/temp.png') center top no-repeat;
   /**/
 }
 a{
@@ -39,5 +38,6 @@ a{
 @import "parts/_banner";
 @import "parts/_mod_carousel";
 @import "parts/_uniqs";
+@import "parts/_footer";
 
 
