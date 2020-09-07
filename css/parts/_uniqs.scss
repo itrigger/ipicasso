@@ -37,7 +37,6 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  transition: 0.3s all;
   .desc{
     background: rgba(#ffffff,0.85);
     font-size: 16px;
@@ -80,7 +79,6 @@
   }
   &:hover{
     .ico-arrow{
-      transition: 0.3s all;
       background: url('../img/icon-arrow-go-focus.svg') 0 0 no-repeat;
     }
   }
@@ -179,7 +177,6 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     .item{
-      transition: 0.3s all;
       .pic{
         margin-bottom: 24px;
         border-radius: 3px;
@@ -198,7 +195,6 @@
       }
       &:hover{
         .desc{
-          transition: 0.3s all;
           color: $base;
         }
       }
@@ -224,6 +220,13 @@
     margin-top: 23px;
     grid-column: 1 / 13;
     text-align: center;
+  }
+}
+
+.js-mosaic{
+  img{
+    border-radius: 3px;
+    overflow: hidden;
   }
 }
 
