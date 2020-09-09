@@ -17,7 +17,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 
   <link href="css/vendor/swiper-bundle.min.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
@@ -26,9 +26,9 @@
   <meta content="#fafafa" name="theme-color">
 </head>
 
-<body>
+<body class="">
 
-
+<div class="body_overlay"></div>
 <!-- start of header -->
 <header class="header" id="header">
   <div class="in"> <!-- .in внутренний контейнер с grid -->
@@ -56,21 +56,179 @@
 
   </div>
 
-  <div id="sidemenu" class="sidemenu">
-    <div class="heading">
-      <div class="sign-block">
-        <div class="greetings">Hello</div>
-        <div class="sign-line">
-          <a class="ico-user" href="/account">Dmitri</a>
-        </div>
-      </div>
-      <div class="close"></div>
-    </div>
-
-  </div>
-
 </header>
 <!-- end of header -->
+
+<!-- side menu -->
+<!-- side menu -->
+<!-- side menu -->
+<!-- side menu -->
+<div class="sidemenu" id="sidemenu">
+  <div class="heading">
+    <div class="sign-block">
+      <div class="greetings">Hello</div>
+      <div class="sign-line">
+        <a class="ico-user white" href="/account">Dmitri</a>
+      </div>
+    </div>
+    <div class="close"></div>
+  </div>
+
+
+  <div class="j-sidemenu-scrollbar-wrapper">
+    <div class="scrollbar-inner">
+      <div class="sidemenu--catalog">
+        <div class="sidemenu--catalog_heading">CATALOG</div>
+        <ul class="ul sidemenu--catalog_ul zeynep">
+          <li class="has-submenu">  <!-- добавляем класс has-submenu для пунктов, у которых есть потомки -->
+            <a href="javascript:void(0);" data-submenu="catid-01">Paint by numbers</a> <!-- в data submenu снова айди категории-->
+            <div class="submenu" id="catid-01">
+              <div class="scrollbar-inner">
+              <!-- контейнер с потомком, тут нужен уникальный ID, можно просто к catid- добавить реальный Id категории -->
+              <div class="submenu-header">
+                <a data-all-close="1" href="#"><span class="arrow arrow-left"></span> Menu</a>
+                <!-- на ссылку возврата в дата атрибут тоже вписать catid- "+ ID категории" -->
+              </div>
+              <label>Paint by numbers</label>
+              <!-- Дублируем название родительской категории, будет заголовком контейнера -->
+              <ul class="ul"> <!-- в UL LI заполняем циклично дочерние категории -->
+                <li><a href="#" class="sidemenu--viewall">View all <span class="arrow"></span></a></li> <!-- ссылка на страницу этой категории -->
+                <li><a href="#">Images of people</a></li>
+
+                <li class="has-submenu">
+                  <a href="#" data-submenu="carid-01-02">Animals</a>
+                  <div class="submenu" id="carid-01-02">
+                    <div class="scrollbar-inner">
+                    <div class="submenu-header">
+                      <a data-all-close="1" href="#"><span class="arrow arrow-left"></span> Menu</a>
+                      <a data-submenu-close="carid-01-02" href="#"><span class="arrow arrow-left"></span> Paint by numbers</a>
+                    </div>
+                    <label>Animals</label>
+                    <ul class="ul">
+                      <li><a href="#" class="sidemenu--viewall">View all <span class="arrow"></span></a></li>
+                      <li><a href="#">Hedgehogs</a></li>
+                      <li><a href="#">Pandas</a></li>
+                      <li><a href="#">Raccoons</a></li>
+                      <li><a href="#">Foxes</a></li>
+                      <li><a href="#">Monkeys</a></li>
+                      <li><a href="#">Horses</a></li>
+                      <li><a href="#">Cats</a></li>
+                      <li><a href="#">Dogs</a></li>
+                      <li><a href="#">Wolves</a></li>
+                      <li><a href="#">Lions, Tigers</a></li>
+                      <li><a href="#">Birds</a></li>
+                      <li><a href="#">Deers</a></li>
+                      <li><a href="#">Rainbow animals</a></li>
+                      <li><a href="#">Butterflies</a></li>
+                      <li><a href="#">Other animals</a></li>
+                      <li><a href="#">Other animals</a></li>
+                      <li><a href="#">Other animals</a></li>
+                      <li><a href="#">Other animals</a></li>
+                    </ul>
+
+                  </div>
+                  </div>
+                </li>
+                <li><a href="#">Abstractions</a></li>
+                <li><a href="#">Still life</a></li>
+                <li><a href="#">Landscapes</a></li>
+                <li><a href="#">Religion</a></li>
+                <li><a href="#">Romance</a></li>
+                <li><a href="#">Cities and Countries</a></li>
+                <li><a href="#">Set for kids</a></li>
+                <li><a href="#">Flowers</a></li>
+                <li><a href="#">Transport</a></li>
+                <li><a href="#">Architecture</a></li>
+                <li><a href="#">Astronomy and space</a></li>
+                <li><a href="#">Food and drinks</a></li>
+                <li><a href="#">Painting by famous artists</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">Nature</a></li>
+
+              </ul>
+
+            </div>
+            </div>
+          </li>
+          <li><a href="javascript:void(0);">Ramy do obrazow</a></li>
+          <li><a href="javascript:void(0);">Diamentova mozika</a></li>
+          <li><a href="javascript:void(0);">Papercraft 3D modele</a></li>
+          <li><a href="javascript:void(0);">Gobeleny</a></li>
+        </ul>
+      </div>
+      <div class="sidemenu--accordion">
+        <div class="js-accordion">
+          <div class="accordion_tab">
+            IPICASSO.PL
+            <div class="accordion_arrow"></div>
+          </div>
+          <div class="accordion_content">
+            <div class="accordion_item">
+              <ul class="ul js-accordion--ul">
+                <li><a href="#">Jak zamówić</a></li>
+                <li><a href="#">Formy płatności</a></li>
+                <li><a href="#">Koszty i sposoby dostawy</a></li>
+                <li><a href="#">Reklamacje i zwroty</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="js-accordion">
+          <div class="accordion_tab">
+            Pomoc dla kupującego
+            <div class="accordion_arrow"></div>
+          </div>
+          <div class="accordion_content">
+            <div class="accordion_item">
+              <ul class="ul js-accordion--ul">
+                <li><a href="#">Jak zamówić</a></li>
+                <li><a href="#">Formy płatności</a></li>
+                <li><a href="#">Koszty i sposoby dostawy</a></li>
+                <li><a href="#">Reklamacje i zwroty</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="js-accordion">
+          <div class="accordion_tab">
+            Media center
+            <div class="accordion_arrow"></div>
+          </div>
+          <div class="accordion_content">
+            <div class="accordion_item">
+              <div class="mediacenter--heading">CONTACT</div>
+              <ul class="ul mediacenter--contacts">
+                <li class="ico-sidebar-phone"><a href="tel:+48881044186">+48 881-044-186</a></li>
+                <li><a href="tel:+48733782620">+48 733-782-620</a></li>
+                <li class="ico-sidebar-mail"><a href="mailto:ipicasso.pl@gmail.com">ipicasso.pl@gmail.com</a></li>
+              </ul>
+              <ul class="ul mediacenter--socials">
+                <li><a class="ico-sidebar-fb" href="#"></a></li>
+                <li><a class="ico-sidebar-yt" href="#"></a></li>
+                <li><a class="ico-sidebar-ig" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<!-- end of side menu -->
+<!-- end of side menu -->
+<!-- end of side menu -->
+<!-- end of side menu -->
 
 <!-- main category menu -->
 <div class="in">
@@ -251,12 +409,12 @@
             </div>
           </div>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
         <!-- end of swiper -->
       </div>
-    </div>
+      <!-- Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div> <!-- module carousel -->
   </div>
 </div>
 <!-- end of carousel new in catalog -->
@@ -274,33 +432,33 @@
 
   <div class="in">
     <div class="circles">
-      <a class="circle--item ci1" href="">
+      <a class="circle--item ci1" href="#">
         <div class="desc">Images of people</div>
       </a>
-      <a class="circle--item ci2" href="">
+      <a class="circle--item ci2" href="#">
         <div class="desc">Raccoons</div>
       </a>
-      <a class="circle--item ci3" href="">
+      <a class="circle--item ci3" href="#">
         <div class="desc">Two lines text for
           example
         </div>
       </a>
-      <a class="circle--item ci4" href="">
+      <a class="circle--item ci4" href="#">
         <div class="desc">Deers</div>
       </a>
-      <a class="circle--item ci5" href="">
+      <a class="circle--item ci5" href="#">
         <div class="desc">Birds</div>
       </a>
-      <a class="circle--item ci6" href="">
+      <a class="circle--item ci6" href="#">
         <div class="desc">Flowers</div>
       </a>
-      <a class="circle--item ci7" href="">
+      <a class="circle--item ci7" href="#">
         <div class="desc">Cars</div>
       </a>
-      <a class="circle--item ci8" href="">
+      <a class="circle--item ci8" href="#">
         <div class="desc">People and Animals</div>
       </a>
-      <a class="circle--item view-more" href="">
+      <a class="circle--item view-more" href="#">
         <div class="desc">View<br>All Collections<br><span class="ico-arrow"></span></div>
       </a>
     </div>
@@ -328,7 +486,7 @@
         <div class="desc">
           4-5 days expedited delivery by DPD
           Free delivery on orders over 50£.
-          <a href="">more…</a>
+          <a href="#">more…</a>
         </div>
       </div>
       <div class="wpcs--item item2">
@@ -530,11 +688,12 @@
             </div>
           </div>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+
         <!-- end of swiper -->
       </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </div>
 </div>
@@ -642,7 +801,7 @@
   <div class="in">
     <div class="accordion">
       <div class="section" data-accordion-group id="mp-accordion">
-        <div class="section" class="open" data-accordion>
+        <div class="section open" data-accordion>
           <button data-control>What does paint by numbers mean?</button>
           <div data-content>
             <div class="article">
@@ -778,11 +937,12 @@
             </div>
           </div>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+
         <!-- end of swiper -->
       </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </div>
 </div>
@@ -793,7 +953,7 @@
   <div class="line1">
     <div class="inner">
       <div class="col col1">
-        <div class="title"><a href="#" class="arrow-white">iPicasso.co.uk</a></div>
+        <div class="title"><a class="arrow-white" href="#">iPicasso.co.uk</a></div>
         <ul class="ul">
           <li><a href="#">About us</a></li>
           <li><a href="#">Our Advantages</a></li>
@@ -802,7 +962,7 @@
         </ul>
       </div>
       <div class="col col2">
-        <div class="title"><a href="#" class="arrow-white">Help center</a></div>
+        <div class="title"><a class="arrow-white" href="#">Help center</a></div>
         <ul class="ul">
           <li><a href="#">How to order</a></li>
           <li><a href="#">Methods of payment</a></li>
@@ -811,7 +971,7 @@
         </ul>
       </div>
       <div class="col col3">
-        <div class="title"><a href="#" class="arrow-white">Contact us</a></div>
+        <div class="title"><a class="arrow-white" href="#">Contact us</a></div>
         <ul class="ul">
           <li><a class="ico-tel" href="tel:+442039663576">+44 20 3966 3576</a></li>
           <li><a class="ico-mail" href="mailto:ipicasso.co.uk@gmail.com">ipicasso.co.uk@gmail.com</a></li>
@@ -825,34 +985,34 @@
           <li><a class="ico-fb" href="#"></a></li>
           <li><a class="ico-yt" href="#"></a></li>
         </ul>
-        <a href="#" class="switcher">Мобильная версия</a>
+        <a class="switcher" href="#">Мобильная версия</a>
       </div>
     </div>
   </div>
-    <div class="line2">
-      <div class="inner">
-        <div class="col col1">
-          <b>FREE</b> shipping
-          <span>on orders</span>
-          <span>from <b>£ 50</b></span>
-        </div>
-        <div class="col col2">
-          Copyright © 2012-2020
-          <span>Online store IPICASSO.CO.UK.</span>
-          <span>Painting by numbers – get</span>
-          <span>closer to the world of art!</span>
-        </div>
-        <div class="col col3">
-          IPICASSO Co., Ltd
-          <span>str.Kineskopowa 1B, office 127</span>
-          <span>05-550 Piaseczno, Poland</span>
-          <span>VAT PL1231355620</span>
-        </div>
-        <div class="col col4">
-          <img src="/img/payments.jpg" alt="">
-        </div>
+  <div class="line2">
+    <div class="inner">
+      <div class="col col1">
+        <b>FREE</b> shipping
+        <span>on orders</span>
+        <span>from <b>£ 50</b></span>
+      </div>
+      <div class="col col2">
+        Copyright © 2012-2020
+        <span>Online store IPICASSO.CO.UK.</span>
+        <span>Painting by numbers – get</span>
+        <span>closer to the world of art!</span>
+      </div>
+      <div class="col col3">
+        IPICASSO Co., Ltd
+        <span>str.Kineskopowa 1B, office 127</span>
+        <span>05-550 Piaseczno, Poland</span>
+        <span>VAT PL1231355620</span>
+      </div>
+      <div class="col col4">
+        <img alt="" src="/img/payments.jpg">
       </div>
     </div>
+  </div>
 
 </div>
 <!-- end of FOOTER -->

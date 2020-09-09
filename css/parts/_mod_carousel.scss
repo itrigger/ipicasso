@@ -2,12 +2,20 @@
   grid-column: 2 / span 10;
   position: relative;
   margin-bottom: 25px;
+  max-width: 100%;
   .swiper-container{
     margin-top: 25px;
   }
-}
-.swiper-container-wrapper{
-  position: relative;
+  .swiper-button-prev{
+    left: -88px;
+    right: auto;
+    background: url("../img/carousel-arrow-left.png") 0 0 no-repeat;
+  }
+  .swiper-button-next{
+    right: -88px;
+    left: auto;
+    background: url("../img/carousel-arrow-right.png") 0 0 no-repeat;
+  }
   .swiper-button-next,
   .swiper-button-prev
   {
@@ -21,16 +29,12 @@
       outline: none;
     }
   }
-  .swiper-button-prev{
-    left: -88px;
-    right: auto;
-    background: url("../img/carousel-arrow-left.png") 0 0 no-repeat;
-  }
-  .swiper-button-next{
-    right: -88px;
-    left: auto;
-    background: url("../img/carousel-arrow-right.png") 0 0 no-repeat;
-  }
+}
+.swiper-container-wrapper{
+  overflow: hidden;
+  position: relative;
+
+
 }
 
 

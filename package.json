@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "jquery": "^3.5.1",
-    "swiper": "^6.1.2"
+    "swiper": "^6.1.2",
+    "zeynepjs": "^2.0.1"
   }
 }

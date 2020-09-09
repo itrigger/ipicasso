@@ -6,6 +6,9 @@ body{
   //background: url('../img/temp.png') center top no-repeat;
   /**/
 }
+body *{
+  box-sizing: border-box;
+}
 a{
   text-decoration: none;
   color: inherit;
@@ -28,6 +31,7 @@ a{
 
 }
 
+@import "parts/_scrollbar";
 @import "parts/_grid";
 @import "parts/_icos";
 @import "parts/_buttons";
@@ -39,3 +43,6 @@ a{
 @import "parts/_footer";
 
 
+/*
+ToDo 1) Баг в файрфокс с каруселью, надо указать ширину контейнера
+ */
